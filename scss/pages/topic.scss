@@ -1,0 +1,17 @@
+.header__topic {
+  width: 100%;
+  @include bg-gradient($blue, $green);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  &-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-title {
+      text-align: center;
+      color: $white;
+    }
+  }
+}

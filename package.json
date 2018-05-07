@@ -1,0 +1,24 @@
+{
+  "name": "venus",
+  "version": "1.0.0",
+  "description": "CSS library for the programming platform.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grardovr/venus.git"
+  },
+  "author": "Gerardo Valencia (@grardovr)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grardovr/venus/issues"
+  },
+  "homepage": "https://github.com/grardovr/venus#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1"
+  }
+}

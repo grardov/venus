@@ -1,0 +1,62 @@
+.card {
+  background-color: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+
+  &__header {
+    height: 50%;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    @include bg-gradient($green, $blue);
+
+    &-text {
+      color: $white;
+    }
+  }
+
+  &__description {
+    background-color: $white;
+    height: 50%;
+    padding: 1rem 2rem;
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+
+      &-subtitle {
+        font-size: 1rem;
+        color: $grey-600;
+      }
+
+      &-text {
+        font-family: $font-open;
+        font-size: 130%;
+        font-weight: 700;
+        color: $grey-900;
+      }
+    }
+
+    &__small {
+      color: $grey-600;
+      font-size: 1rem;
+    }
+  }
+}
+
+.bg-gradient-red {
+  @include bg-gradient($red, $yellow);
+}
+
+.bg-gradient-yellow {
+  @include bg-gradient($yellow, darken($yellow, 20%));
+}
+
+.bg-gradient-purple {
+  @include bg-gradient(#8EC5FC, #E0C3FC);
+}

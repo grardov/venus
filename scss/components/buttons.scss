@@ -1,0 +1,41 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 0;
+
+  
+}
+
+.button {
+  margin: 0;
+  padding: .5rem 1rem;
+  background-color: $grey-700;
+  display: inline-block;
+  color: $white;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+    color: $white;
+    background-color:$grey-800;
+  }
+
+  &:active { background-color: $grey-700; }
+
+  &-primary {
+    @include button-color($blue, $white);
+  }
+
+  &-succes {
+    @include button-color($green, $white);
+  }
+
+  &-danger {
+    @include button-color($red, $white);
+  }
+
+  &-warning {
+    @include button-color($yellow, $black);
+  }
+}

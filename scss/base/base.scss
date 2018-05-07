@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: $font-size;
+  
+  @include responsive (phone) {
+    font-size: 50%;
+  }
+
+  @include responsive (tablet) {
+    font-size: 56.25%;
+  }
+
+  @include responsive (desktop) {
+    font-size: 75%;
+  }
+}
+
+body {  box-sizing: border-box; }

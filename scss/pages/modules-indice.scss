@@ -1,0 +1,49 @@
+.header__module {
+  width: 100%;
+  @include bg-gradient($blue, $green);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  &-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__title {
+    width: 80%;
+    color: $white;
+  }
+
+  .module-circle {
+    flex-basis: 1;
+  }
+}
+
+.module__content {
+  background-color: $grey-bg-1;
+  padding: 1rem;
+  border: 1px solid $grey-bg-2;
+  border-radius: 3px;
+  margin-bottom: 20px;
+
+  &__header {
+    color: $blue;
+    font-weight: 700;
+    padding: 1rem;
+    border-bottom: 1px solid $grey-bg-2;
+  }
+
+  &__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    &-topic {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+  }
+}
